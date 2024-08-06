@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="https:??unpkg.com/typed.js02.0.15/dist/typed.umd.js"></script>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(22, 22, 63);
+        }
+
+        .header a:hover {
+            color: red;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10%;
+            background: transparent;
+            background-color: rgb(45, 29, 61);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            position: relative;
+            font-size: 25px;
+            color: aliceblue;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .navbar a {
+            display: inline;
+            font-size: 25px;
+            color: antiquewhite;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+            transition: .3s;
+
+        }
+
+        .navbar a:hover {
+            color: #0ef;
+            font-size: 1.4rem;
+            font-style: italic;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        /* .home{
+            position: relative;
+            width: 100%;
+            justify-content: space-between;
+            height: 100vh;
+            background-color: rgb(82, 82, 219);
+            background-position: center;
+            display: flex;
+            align-items: center;
+            padding: 20px 10% 0;
+        } */
+
+        section {
+            padding: 60px 20px;
+            margin-top: 60px;
+            background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
+        }
+
+
+        .home-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .text-content {
+            max-width: 600px;
+        }
+
+        .text-content h3 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .text-content h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .text-content p {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+
+        .home-scl a {
+            display: inline-block;
+            margin-right: 10px;
+            color: #333;
+            font-size: 24px;
+            background: transparent;
+            transition: color 0.3s;
+            border: 2px solid black;
+            border-radius: 50%;
+            font-size: 20px;
+            color: #0ef;
+            text-decoration: none;
+            margin: 30px 15px 30px 0;
+        }
+
+        .home-scl a:hover {
+            color: #0073b1;
+            background: #0ef;
+            box-shadow: 0 0 20px #0ef;
+        }
+
+        /* Additional Styles for Better Spacing */
+        body {
+            padding-top: 60px;
+            /* Adjust this value if needed to create more space */
+            background-color: #f4f4f4;
+        }
+
+        section {
+            padding: 60px 20px;
+            margin-top: 60px;
+            background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
+        }
+
+
+        .home-content {
+            padding: 40px;
+        }
+
+        .btn-box {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: #0073b1;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-box:hover {
+            box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+
+        }
+
+
+        h3 {
+            padding-100px;
+            margin-top: 50px;
+        }
+
+        .image-content img {
+            border-radius: 50%;
+            box-shadow: 20px 30px 20px rgba(135, 206, 235, 0.5);
+            width: 290px;
+            height: 290px;
+            object-fit: cover;
+            position: absolute;
+            right: 5%;
+            top: 17%;
+            transition: margin 0.3s ease;
+        }
+
+        .image-content img:hover {
+            margin-top: -20px;
+        }
+
+        #page2 {
+            margin-top: 250px;
+            height: 50vh;
+            width: 100%;
+            background-color: #000;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            flex-direction: column;
+        }
+
+        #page2 h5 {
+            font-size: 22px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            font-weight: 500;
+
+        }
+
+        #page2 h1 {
+            font-style: italic;
+        }
+
+        .about a:hover {
+            color: #e0f7fa;
+        }
+
+        #element {
+            color: rgb(168, 51, 168);
+            font-size: medium;
+            font-style: italic;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        footer {
+            background-color: #5a27aa;
+            height: 233px;
+        }
+
+        .footer {
+            display: flex;
+            margin: 23px 122px;
+            justify-content: space-evenly;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <nav class="navbar">
+            <a href="#" id="home">Home</a>v
+            <a href="Skills.html" id="skills-link">Skills</a>
+            <a href="Academics.html" id="academics-skill">Academics</a>
+            <a href="Projects.html " id="projects">Projects</a>
+            <a href="certifications.html" id="certifications">certifications</a>
+            <a href="Contactme.html" id="contact">Contact me</a>
+        </nav>
+    </header>
+
+
+    <h3>Hello ,It's me</h3>
+    <h1>Samprity Ghosh</h1>
+    <h4>and I am </h3>
+        <p id="element">I am a Frontend-developer and also enthusiast with AIML and NLP, Data Analytics, LLMS etc</p>
+        <div class="image-content">
+            <img src="image.jpg" alt="Samprity Ghosh">
+        </div>
+
+
+
+
+        <div id="page2">
+            <h5>I'm passionate about exploring latest technologies that can change people's lifestyle.</h5>
+
+            <h1>I research latest ML and Deep Learning architecture & data analysis & also exploring LLMS's AMAZing
+                world.</h1>
+
+            <div class="about">
+                <a href="#">About me</a>
+            </div>
+
+
+        </div>
+
+        <!-- <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box">HTML</div>
+            <div class="skill-box">CSS</div>
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">React</div>
+            <div class="skill-box">Node.js</div>
+            <div class="skill-box">Python</div>
+            <div class="skill-box">Machine Learning</div>
+            <div class="skill-box">Deep Learning</div>
+        </div>
+    </section> -->
+
+        <footer>
+            <div class="footer">
+                <div class="footer-first">
+                    <h2>Samprity's Developer Portfolio</h2>
+                </div>
+                <div class="footer-second">
+                    <ul>
+                        <li>home</li>
+                        <li>skills</li>
+                        <li>projects</li>
+                        <li>academics</li>
+                        <li>contact me</li>
+                    </ul>
+                </div>
+
+                <div class="footer-third">
+
+                </div>
+
+                <div class="footer-fourth">
+
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+            integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['Frontend Developer', 'AIML enthusiast', 'Prompt Engineer', 'Working also on LLMS'],
+                typeSpeed: 50,
+            });
+        </script>
+
+        <script src="script.js"></script>
+        <script src="main.js"></script>
+</body>
+
+</html>
